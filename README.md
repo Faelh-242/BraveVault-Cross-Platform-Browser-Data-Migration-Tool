@@ -32,12 +32,12 @@ BraveVault is a powerful tool for securely transferring your Brave browser data 
 
 ```bash
 # On Linux
-git clone https://github.com/brighteyekid/brave-vault.git
+git clone https://github.com/brighteyekid/BraveVault-Cross-Platform-Browser-Data-Migration-Tool.git
 cd brave-vault
 ./install.sh
 
 # On Windows
-git clone https://github.com/brighteyekid/brave-vault.git
+git clone https://github.com/brighteyekid/BraveVault-Cross-Platform-Browser-Data-Migration-Tool.git
 cd brave-vault
 install.bat
 ```
@@ -45,7 +45,7 @@ install.bat
 ### Manual Installation
 
 ```bash
-git clone https://github.com/brighteyekid/brave-vault.git
+git clone https://github.com/brighteyekid/BraveVault-Cross-Platform-Browser-Data-Migration-Tool.git
 cd brave-vault
 pip install -r requirements.txt
 ```
