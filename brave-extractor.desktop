@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=BraveVault
+Comment=Securely transfer Brave browser data between operating systems
+Exec=/bin/bash -c "cd %k && ./brave_extractor_gui.py"
+Icon=brave-browser
+Terminal=false
+Categories=Utility;
+Keywords=Brave;Browser;Data;Export;Import;Vault;Transfer; 
